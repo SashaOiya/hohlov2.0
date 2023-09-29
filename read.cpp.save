@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void FileRead ( float *data_v, float *data_i )
+{
+    FILE *v = fopen ( "V.txt", "r" );
+    
+    const int data_size = 20;
+
+    for ( int i = 0; i < data_size + 1; ++i ) {
+        fscanf ( v, "%f", &data_v[i] );
+    }
+
+}
